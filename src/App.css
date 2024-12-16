@@ -1,0 +1,83 @@
+/* App.css */
+
+/* Styles globaux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header .cart {
+    font-size: 16px;
+  }
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Footer (si vous en avez un, ajustez selon vos besoins) */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media Queries */
+  
+  /* Smartphones (max largeur: 600px) */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
+  /* Tablettes (largeur entre 600px et 900px) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .main-content {
+      padding: 15px;
+    }
+  }
+  
+  /* Ordinateurs (largeur minimum: 901px) */
+  @media (min-width: 901px) {
+    .main-content {
+      padding: 30px;
+    }
+  }
+  
